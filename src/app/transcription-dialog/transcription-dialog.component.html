@@ -1,10 +1,11 @@
 <div class="main">
-  <h1 mat-dialog-header class="dialog-header" fxLayout="row">
+  <h1 mat-dialog-header class="dialog-header"
+    fxLayout="row" fxLayoutAlign="center center">
     <span fxFlex="grow">
-      {{ (isoCode === 'en') ? 'Transkription' : 'Transcription' }}
+      {{ (isoCode === 'en') ? 'Transcription' : 'Transkription' }}
     </span>
-    <button mat-dialog-close fxFlex="100px" fxLayout="row">
-      X
+    <button mat-dialog-close class="custom-button-main" fxFlex="200px" fxLayout="row">
+      {{ (isoCode === 'en') ? 'Close' : 'Schließen' }}
     </button>
   </h1>
   <div mat-dialog-content>
