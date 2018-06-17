@@ -31,3 +31,5 @@ cd -
 unzip "zipfiles/"$city".zip" -d $UNZIP_DIR
 
 umount $UNZIP_DIR
+
+ls $UNZIP_DIR
