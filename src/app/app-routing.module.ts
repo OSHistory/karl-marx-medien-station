@@ -15,6 +15,11 @@ import { BiographyGroupOverviewComponent } from './biography-group-overview/biog
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
     component: HomeViewComponent
   },
   {

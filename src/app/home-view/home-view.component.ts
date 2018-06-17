@@ -26,14 +26,14 @@ export class HomeViewComponent implements OnInit {
           'de': "Stadtportraits",
           'en': "City Portraits"
         },
-        link: "./cityportrait"
+        link: "/cityportrait"
       };
   biographies: any =     {
         name: {
           "en": "Biographies",
           "de": "Biographien"
         },
-        link: "./biographies"
+        link: "/biographies"
       };
 
   letters: any = {
@@ -41,7 +41,7 @@ export class HomeViewComponent implements OnInit {
       "de": "Briefe",
       "en": "Letters"
     },
-    link: "./letters"
+    link: "/letters"
   };
 
   sources: any = {
@@ -49,7 +49,7 @@ export class HomeViewComponent implements OnInit {
       "de": "Archivalien",
       "en": "Archive"
     },
-    link: "./sources"
+    link: "/sources"
   }
 
   constructor(
