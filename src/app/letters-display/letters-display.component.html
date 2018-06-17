@@ -3,7 +3,9 @@
   <div class="main-letter-wrapper" fxLayout="row" fxLayoutGap="50px">
     <div class="nav-column" fxFlex fxLayout="column">
       <div>
-        <button  class="custom-button-main"  (click)="goBack()">{{ (isoCode === 'en') ? 'Back' : 'Zurück' }}</button>
+        <button  class="custom-button-main"  (click)="goBack()">
+          {{ (isoCode === 'en') ? 'Back' : 'Zurück' }}
+        </button>
       </div>
       <div fxFlex="grow"></div>
       <div *ngIf="bioInfo" fxLayout="row"

@@ -29,18 +29,14 @@ export class PersonDetailComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log("WTF");
     this.isoCode = this.languageService.getIsoCode();
     this.languageService.languageChange$.subscribe((isoCode) => {
       this.isoCode = isoCode;
     });
     this.bioId = this.route.snapshot.paramMap.get('bioid');
     this.groupId = this.route.snapshot.paramMap.get('groupid')
-    let lang = this.route.snapshot.paramMap.get('lang');
     this.bioInfo = this.data.getBioInfo(this.bioId);
     this.hasLetters = this.data.personHasLetters(this.bioId);
-    console.log(this.bioId);
-    console.log(this.bioInfo);
   }
 
   goBack() {

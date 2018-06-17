@@ -14,15 +14,12 @@
 
 .application-header {
   display: flex;
-  height: 50px; 
+  height: 50px;
 }
 .application-footer {
   background-color: #171717;
 }
 
-// .router-content-container {
-//   height: calc(100vh - 100px);
-// }
 
 .language-link {
   font-family: 'maax', sans-serif;
@@ -42,21 +39,20 @@
 
 
 .custom-icon {
-
   padding: 16px;
   padding-right: 0px;
-margin-bottom: 10px;
+  margin-bottom: 10px;
 
 }
 
 .custom-icon-name {
-font-size: 2.8rem;
-font-weight: normal;
-color: $primary-color;
-padding: 0px 16px;
-text-transform: uppercase;
-letter-spacing: 2px;
-font-family: 'maax', sans-serif;
+  font-size: 2.8rem;
+  font-weight: normal;
+  color: $primary-color;
+  padding: 0px 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'maax', sans-serif;
 }
 
 .custom-home {

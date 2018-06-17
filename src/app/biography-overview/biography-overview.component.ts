@@ -5,7 +5,6 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { DataService } from '../services/data.service';
 import { LanguageService } from '../services/language.service';
 
-// import { bioSelection } from '../vars/biographies-selection';
 
 @Component({
   selector: 'app-biography-overview',
@@ -18,8 +17,6 @@ export class BiographyOverviewComponent implements OnInit {
   isoCode: string;
   bioGroupId: string;
   colNum: number = 8;
-  // personBios: any[];
-  // bioSelection: any[] = bioSelection;
 
   constructor(
     private dataService: DataService,
@@ -31,10 +28,6 @@ export class BiographyOverviewComponent implements OnInit {
     this.languageService.languageChange$.subscribe((isoCode) => {
       this.isoCode = isoCode;
     });
-
-    // if (this.bioSelection.length === 1) {
-    //   this.persons = this.bioSelection[0]["bios"];
-    // }
   }
 
   ngOnInit() {
@@ -43,8 +36,6 @@ export class BiographyOverviewComponent implements OnInit {
     if (this.persons.length < this.colNum) {
       this.colNum = this.persons.length;
     }
-
-    console.log(this.bioGroupId);
   }
 
 }

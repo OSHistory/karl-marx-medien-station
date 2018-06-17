@@ -4,27 +4,16 @@ img {
   width: 100%;
 }
 
-// .custom-button-main {
-//   background-color: transparent;
-//   color: #c3e15f;
-//   border: 4px solid #c3e15f;
-//   font-size: 1.5rem;
-//   letter-spacing: 1px;
-//   padding: 1rem;
-//   width: 100%;
-//   max-width: 200px;
-// }
-
 .img-container {
   overflow-y: auto;
-height: 930px;
+  height: 930px;
 }
 
 .source-description {
   margin-top: 30px;
-line-height: 30px;
-margin-bottom: 50px;
-font-family: 'nra';
+  line-height: 30px;
+  margin-bottom: 50px;
+  font-family: 'nra';
 }
 
 .source-description-title {
@@ -34,7 +23,7 @@ font-family: 'nra';
 
 .source-description-info {
   font-size: 18px;
-line-height: 23px;
-color: white;
-font-style: italic;
+  line-height: 23px;
+  color: white;
+  font-style: italic;
 }

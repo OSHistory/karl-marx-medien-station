@@ -44,8 +44,6 @@ export class LettersDisplayComponent implements OnInit {
     if (this.bioInfo !== undefined) {
       this.bioGroupId = this.dataService.getBioGroupForSlug(this.bioInfo.slug);
     }
-    console.log(this.bioInfo);
-    console.log(this.bioGroupId);
   }
 
   ngOnInit() {
@@ -56,8 +54,6 @@ export class LettersDisplayComponent implements OnInit {
   }
 
   public scrollTo(idx: number) {
-    // console.log("Scrolling to Letter" + idx);
-    // let nativeElement: HTMLElement = this.el.nativeElement;
     let letterElement = document.getElementById('letter' + idx);
     let el: HTMLElement = this.letterContainer.nativeElement;
     // Display is 1080 - 150 = 930 so scroll into view

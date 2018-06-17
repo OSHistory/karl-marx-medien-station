@@ -10,7 +10,8 @@ import { DataService } from '../services/data.service';
 export class CityPortraitOverviewComponent implements OnInit {
 
   cityGroupOverview: any[];
-  colNum: number = 5; 
+  colNum: number = 5;
+  
   constructor(
     private dataService: DataService
   ) {

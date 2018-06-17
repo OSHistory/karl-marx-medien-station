@@ -7,17 +7,11 @@
 
 .letters {
   overflow-y: auto;
-  // max-height: 100%;
   display: flex;
   width: 1500px;
   flex-direction: column;
   height: calc(100vh - 150px);
   max-height: calc(100vh - 150px);
-}
-
-.nav-column {
-  // display: flex;
-  // width: 60px;
 }
 
 .letter-overview {

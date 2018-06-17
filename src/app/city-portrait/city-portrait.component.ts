@@ -27,16 +27,12 @@ export class CityPortraitComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router
   ) {
-    // TODO: setup for multiple city portraits
     this.isoCode = this.languageService.getIsoCode();
     this.languageService.languageChange$.subscribe((isoCode) => {
       this.isoCode = isoCode;
     });
     this.citySlug = this.route.snapshot.paramMap.get('cityid');
-    console.log(this.citySlug);
-    // this.baseUrl = this.router.url.split("#")[0];
-    this.city = this.dataService.getCityInfo(this.citySlug); 
-    // this.cities[0];
+    this.city = this.dataService.getCityInfo(this.citySlug);
   }
 
   ngOnInit() {

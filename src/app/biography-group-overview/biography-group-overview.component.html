@@ -4,7 +4,6 @@
 
       <mat-grid-list class="main" fxFlex="grow" [cols]="colNum" rowHeight="230px">
         <mat-grid-tile *ngFor="let bioGroup of bioGroupOverview">
-          <!-- [hidden]="isoCode === 'en' && !letterGroup.has_en" -->
           <app-baloon-selector
             [link]="bioGroup.slug"
             [name]="bioGroup.name"></app-baloon-selector>

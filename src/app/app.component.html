@@ -1,49 +1,20 @@
-<!--
-<div class="main" fxLayout="column">
-  <div fxLayout="row" fxFlex="50" fxLayoutAlign="center center">
-    <div fxFlex="50">Biographien</div>
-    <div fxFlex="50">Briefe</div>
-  </div>
-  <div fxLayout="row" fxFlex="50" fxLayoutAlign="center center">
-    <div fxFlex="50">Anderes</div>
-    <div fxFlex="50">Zeug</div>
-  </div>
 
-</div> -->
 <div class="application-main">
-  <!-- <mat-toolbar color="primary">
-    <button routerLink="/" mat-raised-button color="warn">Home</button>
-    MAIN NAVBAR
-  </mat-toolbar> -->
-  <!-- <mat-grid-list cols="2" rowHeight="fit">
-    <mat-grid-tile
-      *ngFor="let navTile of navTiles">
-      <div class="nav-content">
-        <button mat-raised-button color="primary">
-          {{ navTile }}
-        </button>
-      </div>
-    </mat-grid-tile>
-  </mat-grid-list> -->
-  <div class="application-header">
 
+  <!-- blank header due to padding click bug -->
+  <div class="application-header">
   </div>
   <div class="site-content">
-
       <router-outlet></router-outlet>
-
   </div>
 
   <div class="application-footer" fxLayoutAlign="end center">
-
       <span class="language-link" (click)="changeLanguage('de')" [class.active-language]="isoCode === 'de'">DE</span>
       <span class="language-link" (click)="changeLanguage('en')" [class.active-language]="isoCode === 'en'">EN</span>
-
-    <span fxLayoutAlign="center center" class="custom-home" routerLink="/">
+      <span fxLayoutAlign="center center" class="custom-home" routerLink="/">
       <!-- <i class="custom-icon fa fa-home"></i> -->
         <img class="custom-icon" style=" height: 50px;" src="./assets/svg/house.svg">
         <span class="custom-icon-name">Start</span>
-
     </span>
   </div>
 </div>

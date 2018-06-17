@@ -26,7 +26,6 @@ export class SourcesOverviewComponent implements OnInit {
   ) {
     this.isoCode = this.languageService.getIsoCode();
     this.languageService.languageChange$.subscribe((isoCode) => {
-      console.log(isoCode);
       this.isoCode = isoCode;
     })
   }

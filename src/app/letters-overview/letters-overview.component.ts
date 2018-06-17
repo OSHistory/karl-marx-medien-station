@@ -13,7 +13,6 @@ export class LettersOverviewComponent implements OnInit {
 
   letterGroupOverview: any[];
   isoCode: string;
-  // Are there any english letters
   englishLettersAvailable: boolean;
 
   colNum: number = 5;
@@ -28,14 +27,13 @@ export class LettersOverviewComponent implements OnInit {
       this.letterGroupOverview = this.data.getLetterOverview(this.isoCode);
       this.englishLettersAvailable = this._checkEnglishAvailability();
     });
-
   }
 
 
   ngOnInit() {
     this.letterGroupOverview = this.data.getLetterOverview(this.isoCode);
     if (this.letterGroupOverview.length < this.colNum) {
-      this.colNum = this.letterGroupOverview.length; 
+      this.colNum = this.letterGroupOverview.length;
     }
     this.englishLettersAvailable = this._checkEnglishAvailability();
   }

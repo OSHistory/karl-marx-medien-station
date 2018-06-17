@@ -25,14 +25,10 @@ export class AppComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router
   ) {
-    this.dataService.sayHi();
   }
 
   ngOnInit() {
-    console.log("WTF INIT");
     this.isoCode = this.languageService.getIsoCode();
-    // this.isoCode = this.route.snapshot.paramMap.get('lang');
-    console.log(this.isoCode);
   }
 
   changeLanguage(lang: string) {

@@ -3,7 +3,9 @@
     <mat-grid-list class="main" fxFlex="grow" cols="2" rowHeight="fit">
       <mat-grid-tile>
 
-          <button class="custom-button-main-home" [routerLink]="cityPortrait.link" mat-raised-button color="primary">
+          <button class="custom-button-main-home"
+            [routerLink]="cityPortrait.link"
+            mat-raised-button color="primary">
             <ng-container *ngIf="cityOverviews.length === 1">
               {{ cityPortrait.name[isoCode] }}
             </ng-container>
@@ -15,21 +17,29 @@
       </mat-grid-tile>
       <mat-grid-tile>
 
-          <button *ngIf="hasBiographies" class="custom-button-main-home" [routerLink]="biographies.link" mat-raised-button color="primary">
+          <button *ngIf="hasBiographies" class="custom-button-main-home"
+            [routerLink]="biographies.link"
+            mat-raised-button color="primary">
             {{ biographies.name[isoCode] }}
           </button>
 
       </mat-grid-tile>
       <mat-grid-tile>
 
-          <button *ngIf="isoCode === 'de' || hasEnglishLetters" class="custom-button-main-home" [routerLink]="letters.link" mat-raised-button color="primary">
+          <button *ngIf="isoCode === 'de' || hasEnglishLetters"
+            class="custom-button-main-home"
+            [routerLink]="letters.link"
+            mat-raised-button color="primary">
             {{ letters.name[isoCode] }}
           </button>
 
       </mat-grid-tile>
       <mat-grid-tile>
 
-          <button *ngIf="hasSources" class="custom-button-main-home" [routerLink]="sources.link" mat-raised-button color="primary">
+          <button *ngIf="hasSources"
+            class="custom-button-main-home"
+            [routerLink]="sources.link"
+            mat-raised-button color="primary">
             {{ sources.name[isoCode] }}
           </button>
 
@@ -38,19 +48,3 @@
     </mat-grid-list>
 
 </div>
-
-<!-- <div class="main" fxLayout="column">
-  <div fxLayout="row" fxFlex="50" fxLayoutAlign="center center">
-    <div fxFlex="50" routerLink="/biographies">
-      <button mat-raised-button color="primary">
-        Biographien
-      </button>
-    </div>
-    <div fxFlex="50">Briefe</div>
-  </div>
-  <div fxLayout="row" fxFlex="50" fxLayoutAlign="center center">
-    <div fxFlex="50">Anderes</div>
-    <div fxFlex="50">Zeug</div>
-  </div>
-
-</div> -->

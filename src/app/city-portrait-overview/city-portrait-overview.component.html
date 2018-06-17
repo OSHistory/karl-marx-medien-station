@@ -1,16 +1,13 @@
 <div class="main-component-wrapper">
   <div class="component-padding">
     <div class="cities-overview-main" fxLayoutAlign="center center">
-
       <mat-grid-list class="main" fxFlex="grow" [cols]="colNum" rowHeight="230px">
         <mat-grid-tile *ngFor="let cityGroup of cityGroupOverview">
-          <!-- [hidden]="isoCode === 'en' && !letterGroup.has_en" -->
           <app-baloon-selector
             [link]="cityGroup.slug"
             [name]="cityGroup.name"></app-baloon-selector>
         </mat-grid-tile>
       </mat-grid-list>
-
     </div>
   </div>
 </div>
