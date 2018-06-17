@@ -39,8 +39,10 @@
     </div>
 
     <div fxFlex="60">
-      <app-missing-translation *ngIf="isoCode === 'en' && !bioInfo.has_english"></app-missing-translation>
-      <div class="text-content">
+      <ng-container *ngIf="isoCode === 'en' && !bioInfo.has_english">
+        <app-missing-translation></app-missing-translation>
+      </ng-container>
+      <div class="text-content" fxFlex="grow">
         <p *ngFor="let para of bioInfo[isoCode]['content']">{{ para }}</p>
       </div>
     </div>
