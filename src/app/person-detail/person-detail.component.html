@@ -1,7 +1,7 @@
 <div class="main-component-wrapper">
   <div class="component-padding">
 
-  <div fxLayout="row" fxLayoutGab="50px">
+  <div fxLayout="row" fxLayoutGap="50px">
     <div fxFlex="" fxLayout="column">
       <button  class="custom-button-main" (click)="goBack()">{{ (isoCode === 'en') ? 'Back' : 'Zurück' }}</button>
     </div>
@@ -23,7 +23,8 @@
 
     </div>
     <div fxFlex="">
-      <button *ngIf="hasLetters"
+      <!-- TODO: Quickfix should actually check if no english letters -->
+      <button *ngIf="hasLetters && isoCode === 'de'"
         [routerLink]="'/letters/' + bioId"
         class="custom-button-main">
         {{ (isoCode === 'en') ? 'Go to Letters' : 'Zu den Briefen' }}
